@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intelligence Designed To Evolve</title>
+    <meta
+      name="description"
+      content="A modular frontier AI and innovation platform engineered for production, reasoning, and autonomous computing."
+    />
+    <meta property="og:title" content="Intelligence Designed To Evolve" />
+    <meta
+      property="og:description"
+      content="A modular frontier AI and innovation platform engineered for production, reasoning, and autonomous computing."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Display Font: BubbledotICG-FinePos -->
+    <link
+      href="https://db.onlinewebfonts.com/c/8cb707a9b8a73f8a7403336b861c3074?family=BubbledotICG-FinePos"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome 6.5.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <!-- Top Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Background Video Container (Dual Videos for Seamless Era Crossfade) -->
+    <div class="bg" aria-hidden="true">
+      <video
+        id="bg-video-a"
+        class="bg-video active-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260809_012548_ef22562c-c0ae-4816-ad9d-f8922af4e6a7.mp4"
+      ></video>
+      <video
+        id="bg-video-b"
+        class="bg-video"
+        muted
+        loop
+        playsinline
+        preload="auto"
+      ></video>
+      <div class="bg-overlay"></div>
+    </div>
+
+    <!-- Persistent Era Timeline Live Feed Badge -->
+    <div class="era-video-badge" id="era-video-badge">
+      <span class="badge-pulse"></span>
+      <span class="era-video-badge-text" id="era-badge-text">
+        <span class="era-video-badge-tag">Neural Synthesis:</span> 2021–Present // Frontier Generative Cognitive Core
+      </span>
+      <button type="button" class="badge-media-btn" id="era-video-play-btn" aria-label="Play or pause background video">
+        <i class="fa-solid fa-pause"></i>
+      </button>
+      <button type="button" class="badge-media-btn" id="era-video-mute-btn" aria-label="Toggle audio mute">
+        <i class="fa-solid fa-volume-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Main Page Structure -->
+    <div class="page">
+      <!-- Floating Header with Liquid Glass Nav Pill -->
+      <div class="header-wrapper">
+        <header class="header">
+          <a href="/index.html" class="logo-btn" aria-label="Home">
+            <img src="/assets/logo.webp" alt="" width="52" height="52" />
+          </a>
+
+          <nav class="nav-pill" aria-label="Main Navigation">
+            <a href="/index.html" class="nav-link active">Home</a>
+            <a href="/innovations.html" class="nav-link">Innovations</a>
+            <a href="/platform.html" class="nav-link">Platform</a>
+            <a href="/case-studies.html" class="nav-link">Case Studies</a>
+            <a href="/contact.html" class="nav-link">Contact</a>
+          </nav>
+
+          <a href="#sign-in" class="sign-in-btn">Sign in</a>
+
+          <!-- Mobile Burger Button -->
+          <button
+            type="button"
+            class="burger-btn"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+          </button>
+        </header>
+      </div>
+
+      <!-- 1) Hero Section (Full Viewport Presence) -->
+      <main class="hero">
+        <!-- Trust Row -->
+        <div class="trust-row anim" style="--d: 0.05s;">
+          <div class="trust-avatars" aria-hidden="true">
+            <div class="trust-avatar">
+              <div class="trust-avatar-inner">
+                <i class="fa-brands fa-microsoft"></i>
+              </div>
+            </div>
+            <div class="trust-avatar">
+              <div class="trust-avatar-inner">
+                <i class="fa-brands fa-amazon"></i>
+              </div>
+            </div>
+            <div class="trust-avatar">
+              <div class="trust-avatar-inner">
+                <i class="fa-brands fa-google"></i>
+              </div>
+            </div>
+          </div>
+          <div class="trust-pill">
+            Trusted by 2000+ Enterprises
+          </div>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="headline anim">
+          <span class="headline-line" style="--hl-d: 0.12s;">Intelligence</span>
+          <span class="headline-line" style="--hl-d: 0.3s;">Designed To Evolve</span>
+        </h1>
+
+        <!-- Subhead -->
+        <p class="subhead anim" style="--d: 0.28s;">
+          Build applications that reason, adapt and collaborate using a modular AI platform designed for production.
+        </p>
+
+        <!-- CTA Group -->
+        <div class="cta-group anim" style="--d: 0.4s;">
+          <a href="/contact.html" class="cta-btn">
+            Get Started
+          </a>
+          <a href="#timeline" class="cta-secondary-btn">
+            Explore Innovations Around Us &darr;
+          </a>
+        </div>
+      </main>
+
+      <!-- 2) Stats Section (Counting Animation on Scroll) -->
+      <section class="stats scroll-reveal" aria-label="Platform Statistics">
+        <div class="stat-item">
+          <span class="stat-glyph" aria-hidden="true">&lt;</span>
+          <span class="stat-value" data-target="120" data-suffix="ms" data-decimals="0">0ms</span>
+          <span class="stat-label">Inference Time</span>
+        </div>
+
+        <div class="stat-item">
+          <span class="stat-glyph" aria-hidden="true">%</span>
+          <span class="stat-value" data-target="99.99" data-suffix="%" data-decimals="2">0.00%</span>
+          <span class="stat-label">Platform Uptime</span>
+        </div>
+
+        <div class="stat-item">
+          <span class="stat-glyph" aria-hidden="true">*</span>
+          <span class="stat-value" data-target="24" data-suffix="/7" data-decimals="0">0/7</span>
+          <span class="stat-label">Autonomous Runtime</span>
+        </div>
+
+        <div class="stat-item">
+          <span class="stat-glyph" aria-hidden="true">#</span>
+          <span class="stat-value" data-target="2.4" data-suffix="M" data-decimals="1">0.0M</span>
+          <span class="stat-label">Context Windows</span>
+        </div>
+      </section>
+
+      <!-- 3) INNOVATIONS AROUND US: Interactive Era Timeline with Dynamic Video Background -->
+      <section class="timeline-section" id="timeline">
+        <div class="section-header scroll-reveal">
+          <span class="section-tag">Historical Horizons &amp; Everyday Technology</span>
+          <h2 class="section-title">Innovations Around Us</h2>
+          <p class="section-desc">
+            Explore the technological leaps that created our modern world. Select an era to shift the full-bleed background video to historic broadcasts, including Steve Jobs' 2007 iPhone keynote.
+          </p>
+        </div>
+
+        <!-- Timeline Era Switcher Navigation -->
+        <div class="timeline-nav scroll-reveal">
+          <button type="button" class="era-btn" data-era="era-1970">
+            <i class="fa-solid fa-microchip"></i> 1970–1989: Silicon &amp; PC
+          </button>
+          <button type="button" class="era-btn" data-era="era-1990">
+            <i class="fa-solid fa-globe"></i> 1990–1999: Web &amp; GPS
+          </button>
+          <button type="button" class="era-btn" data-era="era-2000">
+            <i class="fa-solid fa-mobile-screen"></i> 2000–2010: iPhone &amp; Cloud
+          </button>
+          <button type="button" class="era-btn" data-era="era-2011">
+            <i class="fa-solid fa-car"></i> 2011–2020: Deep Learning &amp; EV
+          </button>
+          <button type="button" class="era-btn active" data-era="era-2021">
+            <i class="fa-solid fa-brain"></i> 2021–Present: Frontier AI
+          </button>
+        </div>
+
+        <!-- Era 1: 1970-1989 -->
+        <div class="era-panel" id="era-1970">
+          <div class="grid-3">
+            <div class="innovation-image-card liquid-glass scroll-reveal" style="--delay: 0.1s;">
+              <div class="innovation-img-wrapper">
+                <img src="/assets/pc-revolution.webp" alt="The Personal Computer Revolution" loading="lazy" />
+              </div>
+              <div class="innovation-body">
+                <span class="innovation-tag">1977 &bull; Home Silicon</span>
+                <h3 class="innovation-title">The Personal Computer</h3>
+                <p class="innovation-desc">
+                  Democratized computing from mainframe glass cages into everyday homes and classrooms through the Apple II, Commodore 64, and IBM PC.
+                </p>
+                <div class="innovation-impact">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Around Us: Foundation for all personal workstations</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="innovation-image-card liquid-glass scroll-reveal" style="--delay: 0.2s;">
+              <div class="innovation-img-wrapper">
+                <img src="/assets/gui-mouse.webp" alt="Graphical User Interface and Mouse" loading="lazy" />
+              </div>
+              <div class="innovation-body">
+                <span class="innovation-tag">1984 &bull; Human Interface</span>
+                <h3 class="innovation-title">GUI &amp; The Computer Mouse</h3>
+                <p class="innovation-desc">
+                  Replaced intimidating terminal text prompts with windows, desktop icons, and direct physical pointer manipulation pioneered by Xerox PARC.
+                </p>
+                <div class="innovation-impact">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Around Us: Every screen operating system today</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="innovation-image-card liquid-glass scroll-reveal" style="--delay: 0.3s;">
+              <div class="innovation-img-wrapper">
+                <img src="/assets/microprocessor.webp" alt="Microprocessor Chip" loading="lazy" />
+              </div>
+              <div class="innovation-body">
+                <span class="innovation-tag">1971 &bull; Silicon Integration</span>
+                <h3 class="innovation-title">The Microprocessor</h3>
+                <p class="innovation-desc">
+                  Compressing arithmetic and control logic onto a fingernail-sized silicon wafer, enabling cars, appliances, and toys to possess logic brains.
+                </p>
+                <div class="innovation-impact">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Around Us: Embedded in billions of smart devices</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Era 2: 1990-1999 -->
+        <div class="era-panel" id="era-1990">
+          <div class="grid-3">
+            <div class="innovation-image-card liquid-glass scroll-reveal" style="--delay: 0.1s;">
+              <div class="innovation-img-wrapper">
+                <img src="/assets/world-wide-web.webp" alt="World Wide Web" loading="lazy" />
+              </div>
+              <div class="innovation-body">
+                <span class="innovation-tag">1991 &bull; Global Hypertext</span>
+                <h3 class="innovation-title">The World Wide Web</h3>
+                <p class="innovation-desc">
+                  Invented by Tim Berners-Lee at CERN, HTML and HTTP transformed an academic network into a universally accessible global encyclopedia.
+                </p>
+                <div class="innovation-impact">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Around Us: Powers all global commerce &amp; news</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="innovation-image-card liquid-glass scroll-reveal" style="--delay: 0.2s;">
+              <div class="innovation-img-wrapper">
+                <img src="/assets/gps-satellite.webp" alt="Global Positioning System" loading="lazy" />
+              </div>
+              <div class="innovation-body">
+                <span class="innovation-tag">1995 &bull; Satellite Constellation</span>
+                <h3 class="innovation-title">Global Positioning System</h3>
+                <p class="innovation-desc">
+                  Atomic clocks on orbital satellites calculating triangulated coordinates anywhere on Earth with centimeter precision.
+                </p>
+                <div class="innovation-impact">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Around Us: Navigation, ride-sharing &amp; delivery apps</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="innovation-image-card liquid-glass scroll-reveal" style="--delay: 0.3s;">
+              <div class="innovation-img-wrapper">
+                <img src="/assets/fiber-optic.webp" alt="Fiber Optic Telecoms" loading="lazy" />
+              </div>
+              <div class="innovation-body">
+                <span class="innovation-tag">1996 &bull; Optical Physics</span>
+                <h3 class="innovation-title">Optical Fiber Backbones</h3>
+                <p class="innovation-desc">
+                  Pulses of laser light routed across thousands of miles of ultra-pure silica glass cables along ocean floors, transmitting petabits per second.
+                </p>
+                <div class="innovation-impact">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Around Us: The physical fabric of the entire internet</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Era 3: 2000-2010 (Steve Jobs Keynote & Mobile Cloud) -->
+        <div class="era-panel" id="era-2000">
+          <div class="grid-3">
+            <div class="innovation-image-card liquid-glass scroll-reveal" style="--delay: 0.1s;">
+              <div class="innovation-img-wrapper">
+                <img src="/assets/iphone-touch.webp" alt="The Smartphone and Multi-Touch" loading="lazy" />
+              </div>
+              <div class="innovation-body">
+                <span class="innovation-tag">2007 &bull; Steve Jobs Keynote</span>
+                <h3 class="innovation-title">Multi-Touch Smartphone</h3>
+                <p class="innovation-desc">
+                  Steve Jobs introduced "a revolutionary mobile phone, a widescreen iPod with touch controls, and a breakthrough internet communicator."
+                </p>
+                <div class="innovation-impact">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Around Us: In the pocket of 6.8 billion humans</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="innovation-image-card liquid-glass scroll-reveal" style="--delay: 0.2s;">
+              <div class="innovation-img-wrapper">
+                <img src="/assets/cloud-compute.webp" alt="Elastic Cloud Infrastructure" loading="lazy" />
+              </div>
+              <div class="innovation-body">
+                <span class="innovation-tag">2006 &bull; Elastic Compute</span>
+                <h3 class="innovation-title">Cloud Computing</h3>
+                <p class="innovation-desc">
+                  Replaced expensive physical server closets with instantly provisioned virtual machines and object storage (AWS S3 and EC2).
+                </p>
+                <div class="innovation-impact">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Around Us: Streams Netflix, Spotify, and banking</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="innovation-image-card liquid-glass scroll-reveal" style="--delay: 0.3s;">
+              <div class="innovation-img-wrapper">
+                <img src="/assets/lithium-battery.webp" alt="High-Density Lithium-Ion Battery" loading="lazy" />
+              </div>
+              <div class="innovation-body">
+                <span class="innovation-tag">2005 &bull; Energy Density</span>
+                <h3 class="innovation-title">Lithium-Ion Batteries</h3>
+                <p class="innovation-desc">
+                  High electrochemical density chemistry untethering electronics from wall outlets for all-day mobile battery life.
+                </p>
+                <div class="innovation-impact">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Around Us: Powers all phones, tablets, and EVs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Era 4: 2011-2020 -->
+        <div class="era-panel" id="era-2011">
+          <div class="grid-3">
+            <div class="innovation-image-card liquid-glass scroll-reveal" style="--delay: 0.1s;">
+              <div class="innovation-img-wrapper">
+                <img src="/assets/deep-learning.webp" alt="Deep Neural Networks" loading="lazy" />
+              </div>
+              <div class="innovation-body">
+                <span class="innovation-tag">2012 &bull; Neural Renaissance</span>
+                <h3 class="innovation-title">Deep Convolutional Networks</h3>
+                <p class="innovation-desc">
+                  AlexNet demonstrated that massive GPU parallelism trained on big data yields human-surpassing perceptual vision and speech recognition.
+                </p>
+                <div class="innovation-impact">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Around Us: FaceID, translation, and medical imaging</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="innovation-image-card liquid-glass scroll-reveal" style="--delay: 0.2s;">
+              <div class="innovation-img-wrapper">
+                <img src="/assets/electric-vehicle.webp" alt="Electric Autonomous Powertrains" loading="lazy" />
+              </div>
+              <div class="innovation-body">
+                <span class="innovation-tag">2015 &bull; Autonomous Mobility</span>
+                <h3 class="innovation-title">Electric &amp; Autonomous Vehicles</h3>
+                <p class="innovation-desc">
+                  Combining high-voltage skateboard battery architectures with real-time neural vision models for semi-autonomous highway cruising.
+                </p>
+                <div class="innovation-impact">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Around Us: Re-architecting modern urban transit</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="innovation-image-card liquid-glass scroll-reveal" style="--delay: 0.3s;">
+              <div class="innovation-img-wrapper">
+                <img src="/assets/gps-satellite.webp" alt="Reusable Spacecraft Guidance" loading="lazy" />
+              </div>
+              <div class="innovation-body">
+                <span class="innovation-tag">2015 &bull; Autonomous Guidance</span>
+                <h3 class="innovation-title">Propulsive Rocket Landings</h3>
+                <p class="innovation-desc">
+                  Autonomous booster guidance algorithms landing supersonic rockets backward onto floating sea platforms, reducing launch costs by 90%.
+                </p>
+                <div class="innovation-impact">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Around Us: Low-Earth orbit satellite internet (Starlink)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Era 5: 2021-Present (Active Default) -->
+        <div class="era-panel active" id="era-2021">
+          <div class="grid-3">
+            <div class="innovation-image-card liquid-glass scroll-reveal" style="--delay: 0.1s;">
+              <div class="innovation-img-wrapper">
+                <img src="/assets/deep-learning.webp" alt="Frontier Multimodal Foundation Models" loading="lazy" />
+              </div>
+              <div class="innovation-body">
+                <span class="innovation-tag">2023 &bull; Synthetic Reasoning</span>
+                <h3 class="innovation-title">Large Foundation Models</h3>
+                <p class="innovation-desc">
+                  Billions of parameters generating novel computer code, creative literature, mathematical proofs, and collaborative agentic systems.
+                </p>
+                <div class="innovation-impact">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Around Us: Intelligent programming &amp; reasoning copilots</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="innovation-image-card liquid-glass scroll-reveal" style="--delay: 0.2s;">
+              <div class="innovation-img-wrapper">
+                <img src="/assets/quantum-chip.webp" alt="Superconducting Quantum Computing" loading="lazy" />
+              </div>
+              <div class="innovation-body">
+                <span class="innovation-tag">2024 &bull; Quantum Coherence</span>
+                <h3 class="innovation-title">Quantum Supremacy Chips</h3>
+                <p class="innovation-desc">
+                  Chilled to 15 millikelvin inside dilution refrigerators, manipulating entangled qubits for exponential molecular and encryption simulation.
+                </p>
+                <div class="innovation-impact">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Around Us: Breakthrough battery and catalyst chemistry</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="innovation-image-card liquid-glass scroll-reveal" style="--delay: 0.3s;">
+              <div class="innovation-img-wrapper">
+                <img src="/assets/iphone-touch.webp" alt="Spatial Computing & Neural Optics" loading="lazy" />
+              </div>
+              <div class="innovation-body">
+                <span class="innovation-tag">2025 &bull; Spatial Optoelectronics</span>
+                <h3 class="innovation-title">Spatial Computing Glasses</h3>
+                <p class="innovation-desc">
+                  Micro-OLED displays rendering photorealistic spatial windows anchored in physical reality with millisecond eye and hand tracking.
+                </p>
+                <div class="innovation-impact">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Around Us: Augmented surgical &amp; industrial fabrication</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4) Innovation Pillars (Scroll Reveal Grid) -->
+      <section class="section-container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tag">Frontier Capabilities</span>
+          <h2 class="section-title">Engineered For Autonomous Scaling</h2>
+          <p class="section-desc">
+            Bridging foundational frontier models with high-throughput distributed execution, formal mathematical verification, and sovereign hardware isolation.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Card 1 -->
+          <div class="tech-card liquid-glass scroll-reveal" style="--delay: 0.1s;">
+            <div class="tech-card-glow"></div>
+            <div class="card-icon-pill">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <h3 class="card-title">Adaptive Cognitive Mesh</h3>
+            <p class="card-text">
+              Dynamically distributes weights and inference shards across heterogeneous compute nodes, automatically self-healing under volatile traffic surges.
+            </p>
+            <div class="card-meta">
+              <span>Latency SLA: &lt;1.8ms</span>
+              <span class="meta-status">Production Ready</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="tech-card liquid-glass scroll-reveal" style="--delay: 0.2s;">
+            <div class="tech-card-glow"></div>
+            <div class="card-icon-pill">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <h3 class="card-title">Neuro-Symbolic Reasoning</h3>
+            <p class="card-text">
+              Couples generative latent intuition with deterministic formal logic checkers to guarantee hallucination-free compliance in safety-critical operations.
+            </p>
+            <div class="card-meta">
+              <span>Zero-Hallucination Gate</span>
+              <span class="meta-status">Certified</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="tech-card liquid-glass scroll-reveal" style="--delay: 0.3s;">
+            <div class="tech-card-glow"></div>
+            <div class="card-icon-pill">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="card-title">Quantum-Resistant Enclaves</h3>
+            <p class="card-text">
+              Hardware-attested confidential computing environments with post-quantum lattice cryptography, ensuring enterprise memory is never decrypted in transit.
+            </p>
+            <div class="card-meta">
+              <span>FIPS 140-3 Level 4</span>
+              <span class="meta-status">Audited</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5) Full-Width CTA Banner (Scroll Reveal) -->
+      <section class="section-container">
+        <div class="callout-banner liquid-glass scroll-reveal">
+          <span class="section-tag">Enterprise Onboarding</span>
+          <h2 class="section-title" style="font-size: clamp(26px, 4vw, 44px);">
+            Ready To Evolve Your Infrastructure?
+          </h2>
+          <p class="section-desc" style="max-width: 620px; margin: 0 auto 28px;">
+            Provision a private sandbox cluster or book an architecture review with our principal systems engineers today.
+          </p>
+          <div class="cta-group">
+            <a href="/contact.html" class="cta-btn">
+              Request Enterprise Access
+            </a>
+            <a href="/platform.html" class="cta-secondary-btn">
+              Review Architecture Docs &rarr;
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Global Footer -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <div class="footer-logo-row">
+              <span class="logo-btn" style="width: 36px; height: 36px; cursor: default;">
+                <img src="/assets/logo.webp" alt="" width="52" height="52" />
+              </span>
+              <strong style="font-family: var(--font-display); font-size: 18px; letter-spacing: -0.02em;">
+                INTELLIGENCE
+              </strong>
+            </div>
+            <p class="footer-tagline">
+              Autonomous cognitive architectures designed for planetary-scale enterprise operations and frontier research.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="/index.html" class="footer-link">Home</a></li>
+              <li><a href="/innovations.html" class="footer-link">Innovations</a></li>
+              <li><a href="/platform.html" class="footer-link">Platform</a></li>
+              <li><a href="/case-studies.html" class="footer-link">Case Studies</a></li>
+              <li><a href="/contact.html" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Technology</h4>
+            <ul class="footer-links">
+              <li><a href="/innovations.html" class="footer-link">Cognitive Mesh</a></li>
+              <li><a href="/platform.html" class="footer-link">Hardware Runtime</a></li>
+              <li><a href="/innovations.html" class="footer-link">Formal Verifier</a></li>
+              <li><a href="/platform.html" class="footer-link">Quantum Vault</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Connect</h4>
+            <ul class="footer-links">
+              <li><a href="/contact.html" class="footer-link">Request Demo</a></li>
+              <li><a href="/contact.html" class="footer-link">Security Advisory</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noreferrer" class="footer-link">GitHub Enterprise</a></li>
+              <li><a href="#sign-in" class="footer-link">Sign In</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>&copy; 2026 Intelligence Designed To Evolve. All rights reserved.</span>
+          <span style="display: inline-flex; align-items: center; gap: 8px;">
+            <i class="fa-solid fa-circle" style="color: #34d399; font-size: 8px;"></i>
+            All Global Clusters Nominal (P99 1.18ms)
+          </span>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Mobile Drawer / Sheet -->
+    <div class="mobile-overlay" hidden></div>
+    <div
+      class="mobile-sheet"
+      id="mobile-menu"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation menu"
+    >
+      <ul class="mobile-nav-links">
+        <li><a href="/index.html" class="mobile-nav-link active">Home</a></li>
+        <li><a href="/innovations.html" class="mobile-nav-link">Innovations</a></li>
+        <li><a href="/platform.html" class="mobile-nav-link">Platform</a></li>
+        <li><a href="/case-studies.html" class="mobile-nav-link">Case Studies</a></li>
+        <li><a href="/contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <a href="#sign-in" class="sign-in-btn">Sign in</a>
+    </div>
+
+    <!-- Sign In Modal -->
+    <div class="modal-overlay" id="sign-in-modal" hidden>
+      <div class="modal-dialog">
+        <button type="button" class="modal-close-btn" aria-label="Close modal">&times;</button>
+        <div style="text-align: center; margin-bottom: 24px;">
+          <h3 style="font-family: var(--font-display); font-size: 24px; margin-bottom: 6px;">Enterprise Portal</h3>
+          <p style="font-size: 13.5px; color: var(--muted);">Sign in to access your sovereign compute dashboard</p>
+        </div>
+        <form onsubmit="event.preventDefault(); alert('Authentication demo: Connected to sandbox token cluster.');">
+          <div class="form-group">
+            <label class="form-label">Enterprise SSO / Work Email</label>
+            <input type="email" required placeholder="architect@organization.com" class="form-input" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Hardware Security Token / Password</label>
+            <input type="password" required placeholder="••••••••••••" class="form-input" />
+          </div>
+          <button type="submit" class="cta-btn" style="width: 100%; margin-top: 12px;">
+            Authenticate &rarr;
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platform | Intelligence Designed To Evolve</title>
+    <meta
+      name="description"
+      content="Modular runtime architecture and hardware-agnostic infrastructure for planetary-scale cognitive execution."
+    />
+    <meta property="og:title" content="Platform | Intelligence Designed To Evolve" />
+    <meta
+      property="og:description"
+      content="Modular runtime architecture and hardware-agnostic infrastructure for planetary-scale cognitive execution."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Display Font: BubbledotICG-FinePos -->
+    <link
+      href="https://db.onlinewebfonts.com/c/8cb707a9b8a73f8a7403336b861c3074?family=BubbledotICG-FinePos"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome 6.5.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <!-- Top Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Background Video -->
+    <div class="bg" aria-hidden="true">
+      <video id="bg-video-a" class="bg-video active-video" autoplay muted loop playsinline>
+        <source
+          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260809_012548_ef22562c-c0ae-4816-ad9d-f8922af4e6a7.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <video id="bg-video-b" class="bg-video" muted loop playsinline>
+        <source src="" type="video/mp4" />
+      </video>
+      <div class="bg-overlay"></div>
+    </div>
+
+    <!-- Main Page Structure -->
+    <div class="page">
+      <!-- Floating Header -->
+      <div class="header-wrapper">
+        <header class="header">
+          <a href="/index.html" class="logo-btn" aria-label="Home">
+            <img src="/assets/logo.webp" alt="" width="52" height="52" />
+          </a>
+
+          <nav class="nav-pill" aria-label="Main Navigation">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/innovations.html" class="nav-link">Innovations</a>
+            <a href="/platform.html" class="nav-link active">Platform</a>
+            <a href="/case-studies.html" class="nav-link">Case Studies</a>
+            <a href="/contact.html" class="nav-link">Contact</a>
+          </nav>
+
+          <a href="#sign-in" class="sign-in-btn">Sign in</a>
+
+          <!-- Mobile Burger Button -->
+          <button
+            type="button"
+            class="burger-btn"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+          </button>
+        </header>
+      </div>
+
+      <!-- Hero Section -->
+      <main class="hero hero-compact">
+        <div class="badge-pill anim" style="--d: 0.05s;">
+          <span class="badge-pulse"></span>
+          Distributed Systems &amp; Compute Runtime
+        </div>
+
+        <h1 class="headline anim">
+          <span class="headline-line" style="--hl-d: 0.12s;">Modular Stack</span>
+          <span class="headline-line" style="--hl-d: 0.3s;">Engineered To Scale</span>
+        </h1>
+
+        <p class="subhead anim" style="--d: 0.28s;">
+          A unified, hardware-agnostic architecture orchestrating heterogeneous neural weights across private on-premises enclaves and distributed hyperscaler grids.
+        </p>
+
+        <div class="cta-group anim" style="--d: 0.4s;">
+          <a href="#stack" class="cta-btn">
+            Inspect Architecture &darr;
+          </a>
+          <a href="/contact.html" class="cta-secondary-btn">
+            Deploy Private Cluster
+          </a>
+        </div>
+      </main>
+
+      <!-- 4-Layer Modular Stack Architecture -->
+      <section class="section-container" id="stack">
+        <div class="section-header scroll-reveal">
+          <span class="section-tag">System Breakdown</span>
+          <h2 class="section-title">The Four Architectural Layers</h2>
+          <p class="section-desc">
+            Decoupled layers built for zero vendor lock-in, dynamic weight compilation, and absolute deterministic safety.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <!-- Layer 4 -->
+          <div class="tech-card scroll-reveal" style="--delay: 0.1s;">
+            <div class="card-icon-pill">
+              <span style="font-family: var(--font-display); font-size: 16px;">L4</span>
+            </div>
+            <h3 class="card-title">Cognitive Agent Mesh</h3>
+            <p class="card-text">
+              Multi-agent coordination protocol featuring continuous memory synchronization, dynamic tool arbitration, and shared task graphs with zero conflict locks.
+            </p>
+            <div class="card-meta">
+              <span>Arbitration: &lt;100&mu;s</span>
+              <span class="meta-status">High Concurrency</span>
+            </div>
+          </div>
+
+          <!-- Layer 3 -->
+          <div class="tech-card scroll-reveal" style="--delay: 0.18s;">
+            <div class="card-icon-pill">
+              <span style="font-family: var(--font-display); font-size: 16px;">L3</span>
+            </div>
+            <h3 class="card-title">Symbolic Logic &amp; Safety Gate</h3>
+            <p class="card-text">
+              Real-time formal verification engine validating invariants, access policies, and enterprise compliance rules before token generation commits to external buffers.
+            </p>
+            <div class="card-meta">
+              <span>Safety SLA: 100% Invariants</span>
+              <span class="meta-status">Enforced</span>
+            </div>
+          </div>
+
+          <!-- Layer 2 -->
+          <div class="tech-card scroll-reveal" style="--delay: 0.26s;">
+            <div class="card-icon-pill">
+              <span style="font-family: var(--font-display); font-size: 16px;">L2</span>
+            </div>
+            <h3 class="card-title">Distributed KV &amp; Weight Mesh</h3>
+            <p class="card-text">
+              Unified memory tier allowing 2.4M-token state caching with sub-millisecond prefix retrieval, zero-copy pointer transfers, and automatic pruning.
+            </p>
+            <div class="card-meta">
+              <span>RAM Throughput: 3.2 TB/s</span>
+              <span class="meta-status">Optimized</span>
+            </div>
+          </div>
+
+          <!-- Layer 1 -->
+          <div class="tech-card scroll-reveal" style="--delay: 0.34s;">
+            <div class="card-icon-pill">
+              <span style="font-family: var(--font-display); font-size: 16px;">L1</span>
+            </div>
+            <h3 class="card-title">Hardware-Agnostic Bare Metal</h3>
+            <p class="card-text">
+              Direct compilation target for NVIDIA Blackwell, AMD Instinct, Google TPU, and custom silicon accelerators via custom low-level microcode kernels.
+            </p>
+            <div class="card-meta">
+              <span>Silicon Utilization: 94.8% MFU</span>
+              <span class="meta-status">Bare-Metal Native</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Developer SDK & Code Showcase -->
+      <section class="section-container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tag">Integration Experience</span>
+          <h2 class="section-title">Zero-Latency Developer SDK</h2>
+          <p class="section-desc">
+            Instantiate resilient, self-healing cognitive pipelines with under ten lines of code in your enterprise stack.
+          </p>
+        </div>
+
+        <div class="telemetry-console scroll-reveal">
+          <div class="console-header">
+            <div class="console-dots">
+              <span class="console-dot"></span>
+              <span class="console-dot"></span>
+              <span class="console-dot"></span>
+            </div>
+            <span class="console-title">Autonomous Agent Pipeline // Node SDK</span>
+            <span style="font-size: 11.5px; color: #a0a0a0;">TypeScript 5.x</span>
+          </div>
+          <div class="console-body">
+            <div class="code-box">
+<span class="code-keyword">import</span> { EvolveCluster, AgentTopology } <span class="code-keyword">from</span> <span class="code-string">"@evolve/mesh"</span>;
+
+<span class="code-comment">// Connect to high-density sovereign enclave</span>
+<span class="code-keyword">const</span> mesh = <span class="code-keyword">new</span> <span class="code-func">EvolveCluster</span>({
+  clusterId: <span class="code-string">"sovereign-east-09"</span>,
+  enclaveKey: process.env.<span class="code-func">EVOLVE_ENCLAVE_SECRET</span>,
+  symbolicVerification: <span class="code-string">"strict"</span>,
+  maxConcurrency: <span class="code-func">10000</span>
+});
+
+<span class="code-comment">// Instantiate cognitive orchestration pipeline</span>
+<span class="code-keyword">const</span> pipeline = mesh.<span class="code-func">createPipeline</span>({
+  reasoningEngine: <span class="code-string">"neuro-symbolic-v4"</span>,
+  contextBudget: <span class="code-string">"2.4M"</span>,
+  kvCachePolicy: <span class="code-string">"dynamic-sharding"</span>
+});
+
+<span class="code-keyword">const</span> session = <span class="code-keyword">await</span> pipeline.<span class="code-func">streamExecution</span>({
+  directive: <span class="code-string">"Synthesize multi-cluster portfolio risk invariants"</span>,
+  onProofStep: (proof) =&gt; console.<span class="code-func">log</span>(<span class="code-string">`Theorem validated: ${proof.id}`</span>)
+});
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sovereign Deployment Models -->
+      <section class="section-container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tag">Security &amp; Deployment</span>
+          <h2 class="section-title">Deploy Anywhere With Absolute Sovereignty</h2>
+          <p class="section-desc">
+            Whether air-gapped on national defense enclaves or distributed across multi-region cloud providers.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="tech-card scroll-reveal" style="--delay: 0.1s;">
+            <div class="card-icon-pill"><i class="fa-solid fa-cloud"></i></div>
+            <h3 class="card-title">Managed Cloud Enclaves</h3>
+            <p class="card-text">
+              Zero-maintenance hyperscaler nodes managed by our automated control plane with sub-millisecond global load routing.
+            </p>
+            <div class="card-meta"><span>Global Latency: &lt;14ms</span></div>
+          </div>
+
+          <div class="tech-card scroll-reveal" style="--delay: 0.2s;">
+            <div class="card-icon-pill"><i class="fa-solid fa-server"></i></div>
+            <h3 class="card-title">Private VPC Hybrid</h3>
+            <p class="card-text">
+              Run directly inside your AWS, GCP, or Azure VPC perimeter. Your team retains 100% control over physical keys and audit logs.
+            </p>
+            <div class="card-meta"><span>Zero Ingress Decryption</span></div>
+          </div>
+
+          <div class="tech-card scroll-reveal" style="--delay: 0.3s;">
+            <div class="card-icon-pill"><i class="fa-solid fa-lock"></i></div>
+            <h3 class="card-title">Air-Gapped Sovereign</h3>
+            <p class="card-text">
+              Complete offline bare-metal installation for aerospace, intelligence agencies, and classified research facilities.
+            </p>
+            <div class="card-meta"><span>FIPS 140-3 Compliant</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Global Footer -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <div class="footer-logo-row">
+              <span class="logo-btn" style="width: 36px; height: 36px; cursor: default;">
+                <img src="/assets/logo.webp" alt="" width="52" height="52" />
+              </span>
+              <strong style="font-family: var(--font-display); font-size: 18px; letter-spacing: -0.02em;">
+                INTELLIGENCE
+              </strong>
+            </div>
+            <p class="footer-tagline">
+              Autonomous cognitive architectures designed for planetary-scale enterprise operations and frontier research.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="/index.html" class="footer-link">Home</a></li>
+              <li><a href="/innovations.html" class="footer-link">Innovations</a></li>
+              <li><a href="/platform.html" class="footer-link">Platform</a></li>
+              <li><a href="/case-studies.html" class="footer-link">Case Studies</a></li>
+              <li><a href="/contact.html" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Technology</h4>
+            <ul class="footer-links">
+              <li><a href="/innovations.html" class="footer-link">Cognitive Mesh</a></li>
+              <li><a href="/platform.html" class="footer-link">Hardware Runtime</a></li>
+              <li><a href="/innovations.html" class="footer-link">Formal Verifier</a></li>
+              <li><a href="/platform.html" class="footer-link">Quantum Vault</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Connect</h4>
+            <ul class="footer-links">
+              <li><a href="/contact.html" class="footer-link">Request Demo</a></li>
+              <li><a href="/contact.html" class="footer-link">Security Advisory</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noreferrer" class="footer-link">GitHub Enterprise</a></li>
+              <li><a href="#sign-in" class="footer-link">Sign In</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>&copy; 2026 Intelligence Designed To Evolve. All rights reserved.</span>
+          <span style="display: inline-flex; align-items: center; gap: 8px;">
+            <i class="fa-solid fa-circle" style="color: #34d399; font-size: 8px;"></i>
+            All Global Clusters Nominal (P99 1.18ms)
+          </span>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Mobile Drawer / Sheet -->
+    <div class="mobile-overlay" hidden></div>
+    <div
+      class="mobile-sheet"
+      id="mobile-menu"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation menu"
+    >
+      <ul class="mobile-nav-links">
+        <li><a href="/index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="/innovations.html" class="mobile-nav-link">Innovations</a></li>
+        <li><a href="/platform.html" class="mobile-nav-link active">Platform</a></li>
+        <li><a href="/case-studies.html" class="mobile-nav-link">Case Studies</a></li>
+        <li><a href="/contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <a href="#sign-in" class="sign-in-btn">Sign in</a>
+    </div>
+
+    <!-- Sign In Modal -->
+    <div class="modal-overlay" id="sign-in-modal" hidden>
+      <div class="modal-dialog">
+        <button type="button" class="modal-close-btn" aria-label="Close modal">&times;</button>
+        <div style="text-align: center; margin-bottom: 24px;">
+          <h3 style="font-family: var(--font-display); font-size: 24px; margin-bottom: 6px;">Enterprise Portal</h3>
+          <p style="font-size: 13.5px; color: var(--muted);">Sign in to access your sovereign compute dashboard</p>
+        </div>
+        <form onsubmit="event.preventDefault(); alert('Authentication demo: Connected to sandbox token cluster.');">
+          <div class="form-group">
+            <label class="form-label">Enterprise SSO / Work Email</label>
+            <input type="email" required placeholder="architect@organization.com" class="form-input" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Hardware Security Token / Password</label>
+            <input type="password" required placeholder="••••••••••••" class="form-input" />
+          </div>
+          <button type="submit" class="cta-btn" style="width: 100%; margin-top: 12px;">
+            Authenticate &rarr;
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
